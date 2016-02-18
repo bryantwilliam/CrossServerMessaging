@@ -1,6 +1,7 @@
 name: CrossServerMessaging
-version: 1.0.0-DEVELOPMENT-SNAPSHOT
+version: 1.0.1-DEVELOPMENT-SNAPSHOT
 main: com.gmail.gogobebe2.crossservermessaging.Main
 description: Read the title you idiot.
 author: William Bryant (gogobebe2)
 website: gogobebe2@gmail.com
+depend: [Vault]
