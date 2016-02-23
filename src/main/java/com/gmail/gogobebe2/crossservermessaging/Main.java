@@ -29,11 +29,11 @@ public class Main extends JavaPlugin implements Listener, PluginMessageListener 
     public void onEnable() {
         instance = this;
         getLogger().info("Starting up " + this.getName() + ". If you need me to update this plugin, email at gogobebe2@gmail.com");
-        setupChat();
-        Bukkit.getPluginManager().registerEvents(this, this);
-        Bukkit.getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
         Bukkit.getMessenger().registerIncomingPluginChannel(this, "BungeeCord", this);
 
+        setupChat();
+        Bukkit.getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
+        Bukkit.getPluginManager().registerEvents(this, this);
     }
 
     @Override
