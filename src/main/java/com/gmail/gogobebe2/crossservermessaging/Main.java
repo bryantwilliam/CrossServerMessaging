@@ -68,7 +68,7 @@ public class Main extends JavaPlugin implements Listener, PluginMessageListener 
 
     @Override
     public void onPluginMessageReceived(String channel, Player player, byte[] message) {
-        if (channel.equals("BungeeCord")) return;
+        if (!channel.equals("BungeeCord")) return;
 
         ByteArrayDataInput in = ByteStreams.newDataInput(message);
         String subChannel = in.readUTF();
